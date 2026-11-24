@@ -1,0 +1,23 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:IS;src:url(InstrumentSerif-Italic.woff2);font-style:italic}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;background:#0a0a0a;overflow:hidden;font-family:'Inter Display','Inter',sans-serif;color:#fff}
+.bg{position:absolute;inset:0;background:radial-gradient(700px 700px at 50% 1080px,rgba(160,190,60,.22),transparent 70%),linear-gradient(#0a0a0a,#050505)}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(circle at 50% 50%,#000 30%,transparent 75%)}
+.top{position:absolute;top:290px;left:0;right:0;text-align:center}
+.tag{display:inline-flex;align-items:center;gap:14px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.05);color:#bdbdbd;font-weight:600;font-size:26px;letter-spacing:5px;padding:14px 30px;border-radius:100px}
+.tag i{width:14px;height:14px;border-radius:50%;background:#d8f878;display:block}
+h1{margin-top:34px;font-size:86px;line-height:1.05;font-weight:700;letter-spacing:-3px}
+h1 span{color:#d8f878;font-family:IS;font-style:italic;font-weight:400;letter-spacing:-1px;font-size:112px}
+.phone{position:absolute;left:50%;top:640px;width:430px;height:764px;transform:translateX(-50%) rotate(-4deg);border-radius:62px;background:#111;padding:14px;box-shadow:0 0 0 3px #2a2a2a,0 40px 120px rgba(0,0,0,.8),0 0 140px rgba(216,248,120,.18)}
+.phone img{width:100%;height:100%;object-fit:cover;object-position:50% 52%;border-radius:50px;display:block}
+.notch{position:absolute;top:30px;left:50%;transform:translateX(-50%);width:120px;height:34px;border-radius:20px;background:#000}
+.bottom{position:absolute;top:1475px;left:0;right:0;text-align:center}
+.client{font-size:52px;font-weight:700;letter-spacing:-1px}
+.sub{margin-top:14px;font-size:30px;font-weight:500;color:#9a9a9a;letter-spacing:1px}
+</style></head><body>
+<div class="bg"></div><div class="grid"></div>
+<div class="top"><div class="tag"><i></i>{{TAG}}</div><h1>{{TITULO}}</h1></div>
+<div class="phone"><img src="{{FRAME}}"><div class="notch"></div></div>
+<div class="bottom"><div class="client">{{CLIENTE}}</div><div class="sub">{{SERVICO}}</div></div>
+</body></html>
